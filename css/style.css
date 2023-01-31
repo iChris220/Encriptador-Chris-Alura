@@ -1,0 +1,116 @@
+html{
+    background-color: #6ff2e9;
+}
+
+.orginal-message, .encripted-message{
+    padding: 1rem;
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #109960;
+    background-color: white;
+    background: white; 
+    border: 0px;  
+	border-radius: 6px;  
+    resize: none;
+    height: 25rem;
+}
+.orginal-message::placeholder{
+    color: #0d8670;
+}
+.sign{
+    color: white;
+    background-color: red;
+    padding: 0 0.4rem;
+    border-radius: 100%;
+}
+.alert{
+    height: 2rem;
+    color: red;
+}
+
+main{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: space-around;
+}
+.botones{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+button{
+    width: 10rem;
+    height: 2.5rem;
+    border: 0px;
+    background-color: #098770;
+    color: white;
+    font-weight: 400;
+    font-size: 1rem;
+    border-radius: 10px;
+    margin-left: 15px;
+}
+#sin-mensaje{
+    margin: -23rem 10% 4rem 10%;
+    z-index: 10;
+    top: 0;
+    text-align: center;
+}
+.search-message{
+    width: 70%;
+}
+.subtitle{
+    font-size: 1.5rem;
+    padding-bottom: 15px;
+}
+.logo{
+    margin: 1rem;
+}
+@media (max-width: 1024px) {
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    .orginal-message, .encripted-message{
+        width: 80vw;
+        height: 25vh;
+    }
+    .search-message{
+        display: none;
+    }
+    #sin-mensaje{
+        margin: -6.5rem 10% 0 10%;
+        z-index: 10;
+        top: 0;
+        text-align: center;
+    }
+    .btn2{
+        margin-top: 5rem;
+    }
+}
+@media (max-height: 700px) {
+    footer{
+        position: relative;
+        margin-top: 2rem;
+    }
+}
+@media(max-width: 768px){
+    .orginal-message, .encripted-message{
+        width: 100vw;
+        height: 25vh;
+    }
+    #sin-mensaje{
+        margin: -8rem 10% 0 10%;
+    }
+    .btn2{
+        margin-top: 3rem;
+    }
+}  
+
+*{
+    font-family: 'Merriweather', serif;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}

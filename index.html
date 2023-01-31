@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Encriptador</title>
+</head>
+<body>
+    <header>
+        <img class="logo" src="images/Logo.png" alt="Logo de Alura">
+    </header>
+    
+    
+    
+    <main>
+        <span>
+            <div class="alert">
+                <p id="error"></p>    
+            </div>
+            <textarea class="orginal-message" name="orginal-message" id="orginal-message" cols="30" rows="10" placeholder="Ingresa aquí el texto" onkeypress="return check(event)"></textarea>
+            <p class="info"> <b class="sign">!</b><b>Solo letras minúsculas, sin acentos.</b></p>
+            <div class="botones">
+                <button class="button" onclick="encript()">Encriptar</button>
+            <button class="button" onclick="desencript()">Desencriptar</button>
+            </div>      
+        </span>
+        <span class="card">
+            <div class="alert">
+            <p id="error2"></p>    
+        </div>
+        <textarea type="password" name="encripted-message" id="encripted-message" class="encripted-message" cols="30" rows="10" readonly></textarea>
+        <div id="sin-mensaje">
+            <img class="search-message" src="images/Muñeco.png" alt="Muñeco buscando algo">
+            <p class="subtitle"> <b>Ningún mensaje fue encontrado</b> </p>
+            <p>Ingresa el texto que deseas encriptar o desencriptar</p>
+        </div>
+        <div class="botones btn2">
+            <button class="copiar" onclick="copiar()">Copiar</button>
+            <button onclick="limpiar()">Limpiar</button>
+        </div>
+    </span>
+</main>
+    <script src="JavaScript/main.js"></script>
+</body>
+</html>
